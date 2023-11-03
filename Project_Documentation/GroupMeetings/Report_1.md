@@ -1,6 +1,6 @@
 # Report 1
 Group 4: CottageGore<br>
-Date and location: 11/02/2023, Engineering BLDG, Study Space<br>
+Date and location: 10/26/2023, Engineering BLDG, Study Space<br>
 Present participants: Samantha Jurado; Eduardo De La Rosa; Meaghan Freund; Caroline Fye; 
 Missing participants:Elleana Negrelli<br>
 Project repo: CottageGore (https://github.com/sljur/CottageGore)<br>
@@ -26,7 +26,7 @@ Project repo: CottageGore (https://github.com/sljur/CottageGore)<br>
      - Nothing to try yet; 
      
 ## Next Steps
-- finish coding the path for the game; do more research if needed
-- finish drawing aspect fo the game path
+- Finish coding the path for the game; do more research if needed
+- Finish drawing aspect fo the game path
   
  
