@@ -1,5 +1,5 @@
 # Report 1
-Group 4: CottageGore<br>
+Group 2: CottageGore<br>
 Date and location: 10/31/2023,Engineering BLDG, Study Space<br>
 Present participants: Samantha Jurado; Eduardo De La Rosa; Meaghan Freund;
 Missing participants: None<br>
