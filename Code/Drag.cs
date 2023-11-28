@@ -12,7 +12,7 @@ public class Drag : MonoBehaviour
         if (dragging)
         {
             //Move object, taking into account original offset.
-            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
         }
     
     }
