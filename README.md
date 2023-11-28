@@ -15,9 +15,13 @@ In this tower defene game, there will be a set number of enemies we do not wish 
 
 ## Citations
 
+- This video showed two different ways to click objects and drag them to where the player wants; it doesn't have much to do with tower defense games, but we relaized we could use the code as needed to make our game work they way we wanted it to. Ergo, we used the first way of implementing the drag system since it was a closer match for our game. We kept the second in mind in case we needed it.
+   - Firnox. “Drag 2D Objects in Unity - Using the Mouse to Move Sprites.” YouTube, YouTube, 27 July 2022, www.youtube.com/watch?v=izag_ZHwOtM. 
+
 - This video is what initially gave us the idea of creating a Tower Defense game and our starting ideas on what theme, enemies, and weapons we wanted, along with an idea of what mode we should be coding in; 2D or 3D.
   - Kiwi, Ninja. “Bloons Tower Defense 🕹️ Play on CrazyGames.” 🕹️ Play on CrazyGames, 16 Aug. 2007, <www.crazygames.com/game/bloons-tower-defense>.
 
 - This video is where we learned how to code important pieces of the game, along with understanding how 2D code vs the 3D code we've normally been working with; how the path of a Tower Defense game works in 2D; and where we could get more information about design aspects. Although we didn't use everything in the video and had to make connections with things that were not explained properly, this video was a cornerstone in teaching us what we needed to know about the style of game we wanted to create.
 
   - Lunar, Binary. “Creating a Tower Defense Game in Unity - Dev-Log + Source Code.” YouTube, YouTube, 28 May 2022, <www.youtube.com/watch?v=wIrM0XuxLJ0>.
+
