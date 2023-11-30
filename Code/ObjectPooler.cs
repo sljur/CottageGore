@@ -9,7 +9,7 @@ public class ObjectPooler : MonoBehaviour
     private List<GameObject> _pool;
     private GameObject _poolContainer;
 
-    
+    //Makes sure we have a group of enemies in a list and place to hold them
     private void Awake()
     {
         _pool = new List<GameObject>();
@@ -17,7 +17,7 @@ public class ObjectPooler : MonoBehaviour
         CreatePooler();
     }
 
-   
+    //If we want to add more enemies, this allows us to increase that
     private void CreatePooler()
     {
         for ( int i = 0; i < poolSize; i++)
@@ -26,6 +26,7 @@ public class ObjectPooler : MonoBehaviour
         }
     }
 
+    //This is the fucntion that creates the instantiation of the enemy, and will then be called in Spawner.cs
     private GameObject CreateInstance()
     {
         GameObject newInstance = Instantiate(prefab);
@@ -34,6 +35,7 @@ public class ObjectPooler : MonoBehaviour
         return newInstance;
     }
 
+    //This should be the moment where we gather all the connections from the instance to create them
     public GameObject GetInstanceFromPool()
     {
         for (int i = 0; i < _pool.Count; i++)
@@ -47,12 +49,14 @@ public class ObjectPooler : MonoBehaviour
 
        return CreateInstance();
     }
-
+    
+    //Throws the instance back
     public static void ReturnToPool(GameObject instance)
     {
         instance.SetActive(false);
     }
 
+    //creates the delay for the kbjects in the pool
     public static IEnumerator ReturnToPoolWithDelay(GameObject instance, float delay)
     {
         yield return new WaitForSeconds(delay);
