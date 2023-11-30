@@ -9,6 +9,7 @@ public class Drag : MonoBehaviour
 
     void Update()
     {
+         //This function takes care of the actual movement of the object, and making sure the camera stays focused
         if (dragging)
         {
             //Move object, taking into account original offset.
@@ -17,6 +18,7 @@ public class Drag : MonoBehaviour
     
     }
 
+    //Controls picking up the object! In our case, our weapons.
     private void OnMouseDown()
     {
         //Record the difference between the objects centre, and the clicked point on the camera plane
@@ -24,6 +26,7 @@ public class Drag : MonoBehaviour
         dragging = true;
     }
 
+    //Controls setting our object down! In our case, our weapon.
     private void OnMouseUp()
     {
 
