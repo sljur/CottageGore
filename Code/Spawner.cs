@@ -13,15 +13,15 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer;
     private int _enemiesSpawned;
-
     private ObjectPooler _pooler;
-    // Start is called before the first frame update
+    
+    // Start is called before the first frame update; we want to make sure the objects are pulled before spawning
     void Start()
     {
         _pooler = GetComponent<ObjectPooler>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame; this function controls how often an enemy is spawned from the moment update is called
     void Update()
     {
         _spawnTimer -= Time.deltaTime;
@@ -38,6 +38,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
+    //This function actually makes the enemies show up in the game.
     private void SpawnEnemy()
     {
         GameObject newInstance = _pooler.GetInstanceFromPool();
