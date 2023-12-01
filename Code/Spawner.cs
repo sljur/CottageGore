@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Spawner : MonoBehaviour
 {
@@ -13,8 +15,9 @@ public class Spawner : MonoBehaviour
 
     private float _spawnTimer;
     private int _enemiesSpawned;
+
     private ObjectPooler _pooler;
-    
+
     // Start is called before the first frame update; we want to make sure the objects are pulled before spawning
     void Start()
     {
@@ -34,7 +37,16 @@ public class Spawner : MonoBehaviour
                 SpawnEnemy();
             
             }
-        
+
+        }
+
+        // if the player wins, show the victory scene
+        Shroom[] activeEnemies = GameObject.FindObjectsOfType<Shroom>();
+        int numberOfActiveEnemies = activeEnemies.Length;
+
+        if (numberOfActiveEnemies == 0)
+        {
+            SceneManager.LoadScene("VictoryScene");
         }
     }
 
